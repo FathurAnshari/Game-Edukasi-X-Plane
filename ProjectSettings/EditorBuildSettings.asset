@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Dialogue Scene.unity
     guid: b60c872817fb1ef4297ef85cc768e44c
   - enabled: 1
+    path: Assets/Scenes/Videos Scene.unity
+    guid: 6397578ea3eae2549a7ed46179f67172
+  - enabled: 1
     path: Assets/Scenes/Stage Menu.unity
     guid: fd8e7620c776cf142ba40e63fc8bbe20
   - enabled: 1
@@ -19,9 +22,30 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Misi 1/Soal 2.unity
-    guid: 57294db12860b9d4f80d8f709fdd79cc
+    guid: b17a8d56180e59e41a587b164a2a8733
   - enabled: 1
     path: Assets/Scenes/Misi 1/Soal 3.unity
-    guid: 95983269b57f1064098817abe16c1e8e
+    guid: 25892566ea9d0b143b499854c3268ed5
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 4.unity
+    guid: 4a912ed1c99916e45b0a66f88491168e
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 5.unity
+    guid: 143f1a3e75b8bcb4a97f0c17f5fe1d1f
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 6.unity
+    guid: 8a40b01d5398e614682888a8ad04837f
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 7.unity
+    guid: c483ed500483c6442b46c155cc0b494a
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 8.unity
+    guid: 3f10a1ab7f83a9e48b8cf2da4276c8a6
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 9.unity
+    guid: c56d1dbf86975b74ea2c46556dde5376
+  - enabled: 1
+    path: Assets/Scenes/Misi 1/Soal 10.unity
+    guid: 932feb877f1a8254f8550478004d4c3a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 36f06d432a08aa14390c88505d23f3eb, type: 2}

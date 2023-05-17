@@ -37,6 +37,15 @@ public class Bullet : MonoBehaviour
             game.reduceTarget();
             Destroy(other.gameObject);
         }
+        // if (other.tag == "Canvas")
+        // {
+        //     Destroy(other.gameObject);
+        // }
+        else
+        {
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentScene);
+        }
         Destroy(gameObject);
     }
 

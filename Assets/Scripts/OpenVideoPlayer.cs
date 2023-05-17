@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class OpenVideoPlayer : MonoBehaviour
@@ -34,5 +35,9 @@ public class OpenVideoPlayer : MonoBehaviour
         button.image.sprite = stopSprite;
 
         // player.Play();
+    }
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(3);
     }
 }

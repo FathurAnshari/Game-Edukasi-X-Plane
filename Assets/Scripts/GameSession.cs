@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] int target = 4;
+    [SerializeField] int target = 2;
     [SerializeField] GameObject exit;
     void Start()
     {
@@ -22,11 +22,32 @@ public class GameSession : MonoBehaviour
         if (target == 0)
         {
             exit.SetActive(true);
-            target = 4;
+            DestroyNonTarget();
+            DestroyCanvas();
+            // target = 4;
         }
     }
     public void reduceTarget()
     {
         target--;
     }
+
+    void DestroyNonTarget()
+    {
+        GameObject[] notTarget = GameObject.FindGameObjectsWithTag("Not Target");
+        foreach (GameObject i in notTarget)
+        {
+            GameObject.Destroy(i);
+        }
+    }
+
+    void DestroyCanvas()
+    {
+        GameObject[] notTarget = GameObject.FindGameObjectsWithTag("Canvas");
+        foreach (GameObject i in notTarget)
+        {
+            GameObject.Destroy(i);
+        }
+    }
+
 }

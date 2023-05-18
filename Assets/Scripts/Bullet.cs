@@ -34,6 +34,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.tag == "Target")
         {
+            FindObjectOfType<GameSession>().ProcessNextLevel();
             game.reduceTarget();
             Destroy(other.gameObject);
         }

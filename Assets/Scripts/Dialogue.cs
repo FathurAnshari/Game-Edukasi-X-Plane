@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     private int index;
 
     // Start is called before the first frame update
+
     void Start()
     {
         textComponent.text = string.Empty;
@@ -39,6 +40,7 @@ public class Dialogue : MonoBehaviour
 
     private void LoadNextScene(int sceneID)
     {
+        PlayerPrefs.SetInt("levelAt", 2);
         SceneManager.LoadScene(sceneID);
     }
 

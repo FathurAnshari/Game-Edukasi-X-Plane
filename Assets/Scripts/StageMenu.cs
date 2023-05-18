@@ -7,12 +7,25 @@ using UnityEngine.UI;
 
 public class StageMenu : MonoBehaviour
 {
-    Button button;
+    [SerializeField] Button misi2;
+    [SerializeField] Button misi3;
 
 
     private void Start()
     {
-        button = GetComponent<Button>();
+        if (PlayerPrefs.GetInt("levelAt") == 3)
+        {
+            misi2.interactable = true;
+        }
+        else
+        {
+            if (PlayerPrefs.GetInt("levelAt") == 4)
+            {
+                misi3.interactable = true;
+                misi2.interactable = true;
+            }
+
+        }
     }
     // private void Update()
     // {

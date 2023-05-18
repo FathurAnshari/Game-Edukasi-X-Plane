@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Eksoterm
+  m_text: '- Eksoterm*
 
     - Endoterm'
   m_isRightToLeft: 0

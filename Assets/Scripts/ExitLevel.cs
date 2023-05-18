@@ -27,9 +27,18 @@ public class ExitLevel : MonoBehaviour
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            nextSceneIndex = 0;
+            nextSceneIndex = 3;
         }
+        if (nextSceneIndex == 14)
+        {
+            nextSceneIndex = 3;
+        }
+
         SceneManager.LoadScene(nextSceneIndex);
+
+    }
+    private void LoadStageLevel()
+    {
 
     }
 }

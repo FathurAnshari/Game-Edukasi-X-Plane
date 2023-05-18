@@ -1228,14 +1228,14 @@ MonoBehaviour:
     - OH<sup>-</sup> yang
     bereaksi
 
-    - Cl<sup>-</sup> + Na<sup>+</sup>
+    - Cl<sup>-</sup> + Na<sup>+</sup>*
 
-    - Air
+    - Air*
 
-    - Dinding kalorimeter
+    - Dinding kalorimeter*
 
     -
-    Termometer
+    Termometer*
 
 '
   m_isRightToLeft: 0

@@ -9,6 +9,8 @@ public class AchievetmentSession : MonoBehaviour
 {
     [SerializeField] int stars = 0;
     [SerializeField] TextMeshProUGUI starsText;
+    [SerializeField] GameObject starCanvas;
+
     void Awake()
     {
         int numAchievementSession = FindObjectsOfType<AchievetmentSession>().Length;
@@ -23,7 +25,29 @@ public class AchievetmentSession : MonoBehaviour
     }
     private void Start()
     {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        if (currentScene == 0)
+        {
+            starCanvas.gameObject.SetActive(false);
+        }
+        if (currentScene == 3)
+        {
+            starCanvas.gameObject.SetActive(true);
+        }
         starsText.text = "= " + stars.ToString();
+        Debug.Log("nice");
+    }
+    private void Update()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        if (currentScene == 0)
+        {
+            starCanvas.gameObject.SetActive(false);
+        }
+        if (currentScene == 3)
+        {
+            starCanvas.gameObject.SetActive(true);
+        }
     }
     public void ProcessNextMission()
     {

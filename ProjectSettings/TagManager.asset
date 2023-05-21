@@ -8,6 +8,7 @@ TagManager:
   - Exit
   - Not Target
   - Canvas
+  - Star
   layers:
   - Default
   - TransparentFX

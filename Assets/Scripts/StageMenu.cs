@@ -10,7 +10,6 @@ public class StageMenu : MonoBehaviour
     [SerializeField] Button misi2;
     [SerializeField] Button misi3;
 
-
     private void Start()
     {
         if (PlayerPrefs.GetInt("levelAt") == 3)

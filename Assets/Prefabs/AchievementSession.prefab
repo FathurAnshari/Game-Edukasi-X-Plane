@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stars: 0
   starsText: {fileID: 1839009856}
-  starsCanvas: {fileID: 2891184092373810263}
+  starCanvas: {fileID: 2891184092373810263}
 --- !u!1 &2891184092373810263
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 3651335590520212442}
   m_Layer: 5
   m_Name: StarsCanvas
-  m_TagString: Untagged
+  m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

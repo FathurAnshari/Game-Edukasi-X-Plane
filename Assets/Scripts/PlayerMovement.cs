@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float paddingBottom;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform rocketLauncher;
+    AudioPlayer audioPlayer;
 
     Vector2 moveInput;
     Vector2 minBounds;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         initBounds();
+        audioPlayer = FindAnyObjectByType<AudioPlayer>();
     }
 
     void Update()
@@ -37,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isAlive) { return; }
         Instantiate(bullet, rocketLauncher.position, transform.rotation);
+        audioPlayer.PlayShootingClip();
     }
 
     void Move()

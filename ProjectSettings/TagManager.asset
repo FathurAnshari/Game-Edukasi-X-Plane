@@ -9,6 +9,7 @@ TagManager:
   - Not Target
   - Canvas
   - Star
+  - Barrier
   layers:
   - Default
   - TransparentFX

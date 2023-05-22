@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
     PlayerMovement player;
     float xSpeed;
     GameSession game;
+    AudioPlayer audioPlayer;
 
 
     void Start()
@@ -20,6 +21,7 @@ public class Bullet : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>();
         xSpeed = player.transform.localScale.x * bulletSpeed;
         game = FindObjectOfType<GameSession>();
+        audioPlayer = FindAnyObjectByType<AudioPlayer>();
     }
 
 
@@ -34,6 +36,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.tag == "Target")
         {
+            audioPlayer.PlayDamageClip();
             FindObjectOfType<GameSession>().ProcessNextLevel();
             game.reduceTarget();
             Destroy(other.gameObject);

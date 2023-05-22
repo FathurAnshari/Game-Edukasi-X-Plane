@@ -30,12 +30,8 @@ public class AchievetmentSession : MonoBehaviour
         {
             starCanvas.gameObject.SetActive(false);
         }
-        if (currentScene == 3)
-        {
-            starCanvas.gameObject.SetActive(true);
-        }
         starsText.text = "= " + stars.ToString();
-        Debug.Log("nice");
+
     }
     private void Update()
     {

@@ -8,10 +8,16 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Button soalButton;
+    AudioPlayer audioPlayer;
+    private void Start()
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
 
+    }
 
     public void Pause()
     {
+        audioPlayer.GetComponent<AudioSource>().Pause();
         pauseMenu.SetActive(true);
         soalButton.interactable = false;
         Time.timeScale = 0f;
@@ -19,6 +25,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
+        audioPlayer.GetComponent<AudioSource>().Play();
         pauseMenu.SetActive(false);
         soalButton.interactable = true;
         Time.timeScale = 1f;
@@ -27,6 +34,7 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         pauseMenu.SetActive(false);
+        audioPlayer.GetComponent<AudioSource>().Play();
         soalButton.interactable = false;
         Time.timeScale = 1f;
         int currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -35,6 +43,7 @@ public class PauseMenu : MonoBehaviour
     public void Home(int sceneID)
     {
         Time.timeScale = 1f;
+        audioPlayer.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene(sceneID);
     }
 }

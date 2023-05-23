@@ -133,7 +133,7 @@ MonoBehaviour:
   moveSpeed: 5
   paddingLeft: 0.5
   paddingRight: 8
-  paddingTop: 0.7
+  paddingTop: 2
   paddingBottom: 0.7
   bullet: {fileID: 3235405942177432931, guid: 0024a3e31826a6249bb01fa42bc3084e, type: 3}
   rocketLauncher: {fileID: 8047063038331540767}

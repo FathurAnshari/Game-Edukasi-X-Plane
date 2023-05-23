@@ -13,6 +13,8 @@ public class StartStop : MonoBehaviour
     public Sprite startSprite;
     public Sprite stopSprite;
     [SerializeField] GameObject canvas;
+    AudioPlayer audioPlayer;
+
 
 
 
@@ -21,6 +23,8 @@ public class StartStop : MonoBehaviour
     void Start()
     {
         player = GetComponent<VideoPlayer>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
+
     }
 
     // Update is called once per frame
@@ -31,6 +35,7 @@ public class StartStop : MonoBehaviour
 
     public void CloseVideo()
     {
+        audioPlayer.GetComponent<AudioSource>().Play();
         canvas.SetActive(false);
         player.Stop();
         player.targetTexture.Release();

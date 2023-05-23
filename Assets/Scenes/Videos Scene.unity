@@ -1097,6 +1097,68 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!1001 &847069719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8996863958885819589, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_Name
+      value: AudioButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 790.5673
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 467.01102
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.382145
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996863958885819591, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+--- !u!82 &847069720 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8996863958885819588, guid: 7f72800144002e84eb1903c6ea485505, type: 3}
+  m_PrefabInstance: {fileID: 847069719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &864448574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,6 +1867,7 @@ GameObject:
   - component: {fileID: 1666434217}
   - component: {fileID: 1666434216}
   - component: {fileID: 1666434215}
+  - component: {fileID: 1666434218}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1878,6 +1941,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1666434218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666434214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e449fc8bcd6642f418242087f172a7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPlayer: {fileID: 847069720}
 --- !u!1 &1695965489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2689,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1666434218}
+        m_TargetAssemblyTypeName: ButtonAudio, Assembly-CSharp
+        m_MethodName: playThisSoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 215887821}
         m_TargetAssemblyTypeName: OpenVideoPlayer, Assembly-CSharp
         m_MethodName: LoadNextScene

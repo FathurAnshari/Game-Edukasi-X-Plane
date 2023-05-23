@@ -14,12 +14,13 @@ public class OpenVideoPlayer : MonoBehaviour
     public Sprite stopSprite;
     public Button button;
 
+    AudioPlayer audioPlayer;
 
 
 
     void Start()
     {
-        // player = GetComponent<VideoPlayer>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
 
     }
 
@@ -30,6 +31,7 @@ public class OpenVideoPlayer : MonoBehaviour
     }
     public void PlayVideo()
     {
+        audioPlayer.GetComponent<AudioSource>().Pause();
         canvas.SetActive(true);
         player.Play();
         button.image.sprite = stopSprite;

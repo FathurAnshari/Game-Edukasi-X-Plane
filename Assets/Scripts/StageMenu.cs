@@ -12,6 +12,8 @@ public class StageMenu : MonoBehaviour
 
     private void Start()
     {
+
+
         if (PlayerPrefs.GetInt("levelAt") == 3)
         {
             misi2.interactable = true;
@@ -32,6 +34,7 @@ public class StageMenu : MonoBehaviour
     // }
     public void Misi1(int sceneID)
     {
+
         SceneManager.LoadScene(sceneID);
     }
 

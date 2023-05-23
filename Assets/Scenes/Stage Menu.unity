@@ -689,8 +689,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misi2: {fileID: 1833260721}
   misi3: {fileID: 1987671717}
-  misiClip: {fileID: 8300000, guid: 3cc433054021db348a3b5bb196d87751, type: 3}
-  misiVolume: 1
 --- !u!1 &161043346
 GameObject:
   m_ObjectHideFlags: 0

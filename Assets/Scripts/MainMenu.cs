@@ -13,11 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void Mulai(int sceneID)
     {
-        if (PlayerPrefs.GetInt("levelAt") > 1)
-        {
-            sceneID = 2;
-        }
-        SceneManager.LoadScene(sceneID);
+        StartCoroutine(DelayMulai(sceneID));
     }
     public void Pengaturan()
     {
@@ -26,6 +22,16 @@ public class MainMenu : MonoBehaviour
     public void closePengaturan()
     {
         pengaturan.SetActive(false);
+    }
+
+    IEnumerator DelayMulai(int sceneID)
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        if (PlayerPrefs.GetInt("levelAt") > 1)
+        {
+            sceneID = 2;
+        }
+        SceneManager.LoadScene(sceneID);
     }
 
 }

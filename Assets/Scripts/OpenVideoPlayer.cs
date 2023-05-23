@@ -40,6 +40,13 @@ public class OpenVideoPlayer : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        StartCoroutine(DelayLoadScene());
+    }
+
+    IEnumerator DelayLoadScene()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(3);
+
     }
 }

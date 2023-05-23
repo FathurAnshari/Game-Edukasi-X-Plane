@@ -34,8 +34,15 @@ public class StageMenu : MonoBehaviour
     // }
     public void Misi1(int sceneID)
     {
+        StartCoroutine(DelayMisi(sceneID));
+    }
 
+    IEnumerator DelayMisi(int sceneID)
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(sceneID);
+
+
     }
 
 }

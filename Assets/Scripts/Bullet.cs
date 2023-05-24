@@ -8,12 +8,21 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] float bulletSpeed = 15f;
     [SerializeField] float bulletLifetime = 5f;
+    [SerializeField] ParticleSystem hitEffect;
+    [SerializeField] bool applyCameraShake;
+
+    CameraShake cameraShake;
+
     Rigidbody2D myRigidbody;
     PlayerMovement player;
     float xSpeed;
     GameSession game;
     AudioPlayer audioPlayer;
 
+    private void Awake()
+    {
+        cameraShake = Camera.main.GetComponent<CameraShake>();
+    }
 
     void Start()
     {
@@ -34,27 +43,44 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        PlayHitEffect();
+        audioPlayer.PlayDamageClip();
         if (other.tag == "Target")
         {
-            audioPlayer.PlayDamageClip();
             FindObjectOfType<GameSession>().ProcessNextLevel();
             game.reduceTarget();
             Destroy(other.gameObject);
         }
-        // if (other.tag == "Canvas")
-        // {
-        //     Destroy(other.gameObject);
-        // }
-        else
+        if (other.tag == "Not Target")
         {
-            int currentScene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentScene);
+            ShakeCamera();
         }
+        // else
+        // {
+        //     // int currentScene = SceneManager.GetActiveScene().buildIndex;
+        //     // SceneManager.LoadScene(currentScene);
+        // }
         Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
+    }
+
+    void PlayHitEffect()
+    {
+        if (hitEffect != null)
+        {
+            ParticleSystem instance = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(instance.gameObject, instance.main.duration + instance.main.startLifetime.constantMax);
+        }
+    }
+    void ShakeCamera()
+    {
+        if (cameraShake != null && applyCameraShake)
+        {
+            cameraShake.Play();
+        }
     }
 }

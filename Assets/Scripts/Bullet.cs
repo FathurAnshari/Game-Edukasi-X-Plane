@@ -43,6 +43,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
         PlayHitEffect();
         audioPlayer.PlayDamageClip();
         if (other.tag == "Target")
@@ -54,11 +55,19 @@ public class Bullet : MonoBehaviour
         if (other.tag == "Not Target")
         {
             ShakeCamera();
+            if (currentScene <= 13)
+            {
+                SceneManager.LoadScene(4);
+            }
+            else
+            {
+                SceneManager.LoadScene(14);
+
+            }
         }
         // else
         // {
-        //     // int currentScene = SceneManager.GetActiveScene().buildIndex;
-        //     // SceneManager.LoadScene(currentScene);
+
         // }
         Destroy(gameObject);
     }

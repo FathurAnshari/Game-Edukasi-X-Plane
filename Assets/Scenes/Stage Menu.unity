@@ -2831,6 +2831,10 @@ PrefabInstance:
       value: Misi2
       objectReference: {fileID: 0}
     - target: {fileID: 2469764606801664890, guid: 090092248eca911498030c03bc8a41af, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469764606801664890, guid: 090092248eca911498030c03bc8a41af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -3006,6 +3010,10 @@ PrefabInstance:
       propertyPath: misi3
       value: 
       objectReference: {fileID: 1987671717}
+    - target: {fileID: 3914493581021347815, guid: 77f02947ab055c443a5031b68c50615c, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3914493581021347815, guid: 77f02947ab055c443a5031b68c50615c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2

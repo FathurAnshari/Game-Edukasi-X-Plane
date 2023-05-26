@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class ExitLevel : MonoBehaviour
 {
-    [SerializeField] Button misi2;
-    [SerializeField] Button misi3;
 
+    AchievetmentSession achievetment;
 
     void Start()
     {
-
+        gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        achievetment = FindObjectOfType<AchievetmentSession>();
     }
 
 
@@ -23,41 +22,24 @@ public class ExitLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        if (currentScene == 13 && achievetment.stars < 2)
+        {
+            achievetment.IncreaseStar();
+        }
+        if (currentScene == 14 && achievetment.stars < 2)
+        {
+            achievetment.IncreaseStar();
+        }
         LoadNextScene();
+        gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+
     }
     private void LoadNextScene()
     {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
-        {
-            FindAnyObjectByType<AchievetmentSession>().ResetAchiementSession();
-            misi2.interactable = true;
-            misi3.interactable = true;
-            PlayerPrefs.DeleteAll();
-            nextSceneIndex = 0;
-        }
-        else
-        {
-            if (nextSceneIndex == 14)
-            {
-                PlayerPrefs.SetInt("levelAt", 3);
-                FindAnyObjectByType<AchievetmentSession>().IncreaseStar();
-                misi2.interactable = true;
-                misi3.interactable = false;
-                nextSceneIndex = 3;
-            }
-            if (nextSceneIndex == 15)
-            {
-                PlayerPrefs.SetInt("levelAt", 4);
-                FindAnyObjectByType<AchievetmentSession>().IncreaseStar();
-                misi2.interactable = true;
-                misi3.interactable = true;
-                nextSceneIndex = 3;
-            }
 
+        StartCoroutine(FindObjectOfType<AchievetmentSession>().LoadLevel());
 
-        }
-        SceneManager.LoadScene(nextSceneIndex);
 
 
     }

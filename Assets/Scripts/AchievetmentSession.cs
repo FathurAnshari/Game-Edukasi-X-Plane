@@ -4,12 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class AchievetmentSession : MonoBehaviour
 {
-    [SerializeField] int stars = 0;
+    public int stars = 0;
     [SerializeField] TextMeshProUGUI starsText;
     [SerializeField] GameObject starCanvas;
+    [SerializeField] Animator transitionAnim;
+    [SerializeField] Button misi2;
+    [SerializeField] Button misi3;
 
     void Awake()
     {
@@ -44,6 +48,7 @@ public class AchievetmentSession : MonoBehaviour
         {
             starCanvas.gameObject.SetActive(true);
         }
+
     }
     public void ProcessNextMission()
     {
@@ -60,6 +65,42 @@ public class AchievetmentSession : MonoBehaviour
     public void ResetAchiementSession()
     {
         stars = 0;
-        Destroy(gameObject);
+
+    }
+
+    public IEnumerator LoadLevel()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            PlayerPrefs.DeleteAll();
+            misi2.interactable = true;
+            misi3.interactable = true;
+            nextSceneIndex = 0;
+        }
+        else
+        {
+            if (nextSceneIndex == 14)
+            {
+                PlayerPrefs.SetInt("levelAt", 3);
+                misi2.interactable = true;
+                misi3.interactable = false;
+                nextSceneIndex = 3;
+            }
+
+            else if (nextSceneIndex == 15)
+            {
+                PlayerPrefs.SetInt("levelAt", 4);
+                misi2.interactable = true;
+                misi3.interactable = true;
+                nextSceneIndex = 3;
+            }
+
+        }
+        transitionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(nextSceneIndex);
+        transitionAnim.SetTrigger("Start");
+
     }
 }

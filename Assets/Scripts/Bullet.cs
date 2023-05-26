@@ -59,7 +59,7 @@ public class Bullet : MonoBehaviour
             {
                 SceneManager.LoadScene(4);
             }
-            else
+            else if (currentScene > 13 && currentScene <= 16)
             {
                 SceneManager.LoadScene(14);
 

@@ -27,9 +27,14 @@ public class ExitLevel : MonoBehaviour
         {
             achievetment.IncreaseStar();
         }
-        if (currentScene == 14 && achievetment.stars < 2)
+        if (currentScene == 16 && achievetment.stars < 2)
         {
             achievetment.IncreaseStar();
+        }
+        if (other.tag == "Player")
+        {
+            LoadNextScene();
+
         }
         LoadNextScene();
         gameObject.GetComponent<BoxCollider2D>().isTrigger = false;

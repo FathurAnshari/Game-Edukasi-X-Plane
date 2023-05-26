@@ -88,7 +88,7 @@ public class AchievetmentSession : MonoBehaviour
                 nextSceneIndex = 3;
             }
 
-            else if (nextSceneIndex == 15)
+            else if (nextSceneIndex == 17)
             {
                 PlayerPrefs.SetInt("levelAt", 4);
                 misi2.interactable = true;

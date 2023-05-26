@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] int target = 2;
+    public int target = 2;
     [SerializeField] GameObject exit;
+
     void Start()
     {
 

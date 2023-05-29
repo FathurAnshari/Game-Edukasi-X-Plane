@@ -9,12 +9,15 @@ public class Waypoints : MonoBehaviour
 
     [SerializeField]
     float moveSpeed = 2f;
-
     int waypointIndex = 0;
+
+
 
     void Start()
     {
+
         transform.position = waypoints[waypointIndex].transform.position;
+
     }
 
     void Update()
@@ -34,8 +37,8 @@ public class Waypoints : MonoBehaviour
         }
 
         if (waypointIndex == waypoints.Length)
-        {
-            Destroy(gameObject);
-        }
+            waypointIndex = 0;
     }
+
+
 }

@@ -10,14 +10,15 @@ TagManager:
   - Canvas
   - Star
   - Barrier
+  - Misi3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullet
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

@@ -10,10 +10,12 @@ public class ExitLevel : MonoBehaviour
 
     void Start()
     {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
         gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         achievetment = FindObjectOfType<AchievetmentSession>();
+        Debug.Log(currentScene);
+        Debug.Log(achievetment.stars);
     }
-
 
     void Update()
     {
@@ -31,22 +33,12 @@ public class ExitLevel : MonoBehaviour
         {
             achievetment.IncreaseStar();
         }
-        if (other.tag == "Player")
-        {
-            LoadNextScene();
-
-        }
         LoadNextScene();
         gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
-
     }
     private void LoadNextScene()
     {
-
-        StartCoroutine(FindObjectOfType<AchievetmentSession>().LoadLevel());
-
-
-
+        StartCoroutine(achievetment.LoadLevel());
     }
     private void LoadStageLevel()
     {

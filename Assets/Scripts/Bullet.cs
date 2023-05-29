@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour
     PlayerMovement player;
     float xSpeed;
     GameSession game;
+    Misi3 misi3;
     AudioPlayer audioPlayer;
 
     private void Awake()
@@ -31,6 +32,7 @@ public class Bullet : MonoBehaviour
         xSpeed = player.transform.localScale.x * bulletSpeed;
         game = FindObjectOfType<GameSession>();
         audioPlayer = FindAnyObjectByType<AudioPlayer>();
+        misi3 = FindObjectOfType<Misi3>();
     }
 
 
@@ -48,7 +50,7 @@ public class Bullet : MonoBehaviour
         audioPlayer.PlayDamageClip();
         if (other.tag == "Target")
         {
-            FindObjectOfType<GameSession>().ProcessNextLevel();
+            // FindObjectOfType<GameSession>().ProcessNextLevel();
             game.reduceTarget();
             Destroy(other.gameObject);
         }
@@ -64,6 +66,11 @@ public class Bullet : MonoBehaviour
                 SceneManager.LoadScene(14);
 
             }
+        }
+        if (other.tag == "Misi3")
+        {
+            Destroy(other.gameObject);
+            misi3.reduceTarget();
         }
         // else
         // {

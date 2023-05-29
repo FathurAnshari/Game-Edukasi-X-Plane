@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] Transform rocketLauncher;
     AudioPlayer audioPlayer;
+    Waypoints waypoints;
+    GameSession gameSession;
+
 
     Vector2 moveInput;
     Vector2 minBounds;
@@ -20,12 +24,19 @@ public class PlayerMovement : MonoBehaviour
     bool isAlive = true;
     void Start()
     {
+        gameSession = FindObjectOfType<GameSession>();
         initBounds();
         audioPlayer = FindAnyObjectByType<AudioPlayer>();
     }
 
     void Update()
     {
+        if (gameSession.target == 0 && SceneManager.GetActiveScene().buildIndex == 16)
+        {
+            waypoints = GetComponent<Waypoints>();
+            waypoints.enabled = true;
+            gameObject.GetComponent<PlayerMovement>().enabled = false;
+        }
         Move();
     }
     void initBounds()

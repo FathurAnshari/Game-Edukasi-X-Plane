@@ -969,6 +969,8 @@ MonoBehaviour:
   optionsMenu: {fileID: 3828330347660726958}
   pauseButton: {fileID: 3828330346109063728}
   soalButton: {fileID: 3828330346689943814}
+  bantuanPanel: {fileID: 0}
+  warning: {fileID: 0}
 --- !u!1 &3828330346694760603
 GameObject:
   m_ObjectHideFlags: 0

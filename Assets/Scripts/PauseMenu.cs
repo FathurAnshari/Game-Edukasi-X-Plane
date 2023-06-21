@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Button soalButton;
+    [SerializeField] Button optionButton;
     AudioPlayer audioPlayer;
     private void Start()
     {
@@ -20,6 +21,7 @@ public class PauseMenu : MonoBehaviour
         audioPlayer.GetComponent<AudioSource>().Pause();
         pauseMenu.SetActive(true);
         soalButton.interactable = false;
+        optionButton.interactable = false;
         Time.timeScale = 0f;
 
     }
@@ -28,6 +30,7 @@ public class PauseMenu : MonoBehaviour
         audioPlayer.GetComponent<AudioSource>().Play();
         pauseMenu.SetActive(false);
         soalButton.interactable = true;
+        optionButton.interactable = true;
         Time.timeScale = 1f;
     }
 

@@ -14,6 +14,7 @@ public class AchievetmentSession : MonoBehaviour
     [SerializeField] Animator transitionAnim;
     [SerializeField] Button misi2;
     [SerializeField] Button misi3;
+    [SerializeField] Button misi4;
 
     void Awake()
     {
@@ -74,11 +75,12 @@ public class AchievetmentSession : MonoBehaviour
         }
         else
         {
-            if (nextSceneIndex == 14)
+            if (nextSceneIndex == 7)
             {
                 PlayerPrefs.SetInt("levelAt", 3);
                 misi2.interactable = true;
                 misi3.interactable = false;
+                misi4.interactable = false;
                 nextSceneIndex = 3;
             }
 

@@ -18,46 +18,31 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage Menu.unity
     guid: fd8e7620c776cf142ba40e63fc8bbe20
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 1.unity
+    path: Assets/Scenes/Stage 1/Soal 1 stage 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 2.unity
-    guid: b17a8d56180e59e41a587b164a2a8733
+    path: Assets/Scenes/Stage 1/Soal 2 stage 1.unity
+    guid: 42411dce9570afa429871bd014ddb304
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 3.unity
-    guid: 25892566ea9d0b143b499854c3268ed5
+    path: Assets/Scenes/Stage 1/Soal 3 stage 1.unity
+    guid: 06ca647f492c05f439ada13a5e814fa1
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 4.unity
-    guid: 4a912ed1c99916e45b0a66f88491168e
+    path: Assets/Scenes/Stage 2/Soal 4 stage 2.unity
+    guid: 656c440fa36051c4db75570b650d7095
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 5.unity
-    guid: 143f1a3e75b8bcb4a97f0c17f5fe1d1f
+    path: Assets/Scenes/Stage 2/Soal 5 stage 2.unity
+    guid: 767f479ecc8deb445b07ebe87969b07d
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 6.unity
-    guid: 8a40b01d5398e614682888a8ad04837f
+    path: Assets/Scenes/Stage 2/Soal 6 stage 2.unity
+    guid: dcc77ac12a7afbe4fb70161c20f9c87f
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 7.unity
-    guid: c483ed500483c6442b46c155cc0b494a
+    path: Assets/Scenes/Stage 2/Soal 7 stage 2.unity
+    guid: d73584cb558b1e84bb4480f92c22c5b5
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 8.unity
-    guid: 3f10a1ab7f83a9e48b8cf2da4276c8a6
+    path: Assets/Scenes/Stage 2/Soal 8 stage 2.unity
+    guid: 5fbdff4338a81af4dafbdfd9ef973172
   - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 9.unity
-    guid: c56d1dbf86975b74ea2c46556dde5376
-  - enabled: 1
-    path: Assets/Scenes/Misi 1/Soal 10.unity
-    guid: 932feb877f1a8254f8550478004d4c3a
-  - enabled: 1
-    path: Assets/Scenes/Misi 2/Soal 1.unity
-    guid: e400b1caf5c897d4aba8d50b6b30574f
-  - enabled: 1
-    path: Assets/Scenes/Misi 2/Soal 2.unity
-    guid: dbe311756d3b6764ebaa61b2c8926f0b
-  - enabled: 1
-    path: Assets/Scenes/Misi 2/Soal 3.unity
-    guid: ea4c7c409aab75d409fae43a75d1af00
-  - enabled: 1
-    path: Assets/Scenes/Misi 3/Soal 1.unity
-    guid: dd338081c6e9fad448308e4c97b0bee3
+    path: Assets/Scenes/Stage 2/Soal 9 stage 2.unity
+    guid: d6ffc7bc7251f2f40a087a405d29a9e7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 36f06d432a08aa14390c88505d23f3eb, type: 2}

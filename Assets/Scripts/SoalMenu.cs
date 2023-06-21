@@ -9,7 +9,8 @@ public class SoalMenu : MonoBehaviour
     [SerializeField] GameObject optionsMenu;
     [SerializeField] Button pauseButton;
     [SerializeField] Button soalButton;
-
+    [SerializeField] GameObject bantuanPanel;
+    [SerializeField] GameObject warning;
     // private void Awake()
     // {
     //     pauseButton = FindAnyObjectByType<Button>();
@@ -39,6 +40,25 @@ public class SoalMenu : MonoBehaviour
         optionsMenu.SetActive(false);
         pauseButton.interactable = true;
         soalButton.interactable = true;
+        soalMenu.SetActive(true);
         Time.timeScale = 1f;
+    }
+    public void openBantuan()
+    {
+        bantuanPanel.SetActive(true);
+        soalMenu.SetActive(false);
+        pauseButton.interactable = false;
+        soalButton.interactable = false;
+    }
+    public void closeBantuan()
+    {
+        bantuanPanel.SetActive(false);
+        soalMenu.SetActive(true);
+        pauseButton.interactable = true;
+        soalButton.interactable = true;
+    }
+    public void closeWarning()
+    {
+        warning.SetActive(false);
     }
 }

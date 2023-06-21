@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     GameManager gameManager;
     [SerializeField] GameObject pengaturan;
+    [SerializeField] GameObject profilePengembang;
     [SerializeField] GameObject materi;
 
 
@@ -32,6 +33,16 @@ public class MainMenu : MonoBehaviour
     {
         materi.SetActive(false);
     }
+    public void profile()
+    {
+        profilePengembang.SetActive(true);
+    }
+    public void closeProfile()
+    {
+        profilePengembang.SetActive(false);
+    }
+
+
 
     IEnumerator DelayMulai(int sceneID)
     {

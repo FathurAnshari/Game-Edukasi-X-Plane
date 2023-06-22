@@ -689,6 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misi2: {fileID: 1833260721}
   misi3: {fileID: 1987671717}
+  misi4: {fileID: 3854122474827721783}
 --- !u!1 &161043346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,6 +2862,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2277970606772617775, guid: eb946e1e3c0c40e4cb527038027291df, type: 3}
+      propertyPath: misi4
+      value: 
+      objectReference: {fileID: 3854122474827721783}
     - target: {fileID: 2891184092373810263, guid: eb946e1e3c0c40e4cb527038027291df, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3017,7 +3022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469764606801664890, guid: 090092248eca911498030c03bc8a41af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2469764606801664890, guid: 090092248eca911498030c03bc8a41af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -3031,6 +3036,10 @@ PrefabInstance:
       propertyPath: misi3
       value: 
       objectReference: {fileID: 1987671717}
+    - target: {fileID: 2469764606801664891, guid: 090092248eca911498030c03bc8a41af, type: 3}
+      propertyPath: misi4
+      value: 
+      objectReference: {fileID: 3854122474827721783}
     - target: {fileID: 2469764607436235404, guid: 090092248eca911498030c03bc8a41af, type: 3}
       propertyPath: m_text
       value: 'Stage 2
@@ -3149,12 +3158,39 @@ PrefabInstance:
       propertyPath: misi2
       value: 
       objectReference: {fileID: 1833260721}
+    - target: {fileID: 229548154841207558, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
+      propertyPath: misi3
+      value: 
+      objectReference: {fileID: 1987671717}
+    - target: {fileID: 229548154841207558, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
+      propertyPath: misi4
+      value: 
+      objectReference: {fileID: 3854122474827721783}
+    - target: {fileID: 229548154841207559, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 229548154841207559, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 20307024}
+    - target: {fileID: 229548154841207559, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
+--- !u!114 &3854122474827721783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 229548154841207559, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
+  m_PrefabInstance: {fileID: 3854122474827721782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &3914493581567246135 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 229548154841207553, guid: 5e0a624e767791c4aa384b57c24bd93a, type: 3}
@@ -3263,6 +3299,10 @@ PrefabInstance:
       propertyPath: misi3
       value: 
       objectReference: {fileID: 1987671717}
+    - target: {fileID: 3914493581021347814, guid: 77f02947ab055c443a5031b68c50615c, type: 3}
+      propertyPath: misi4
+      value: 
+      objectReference: {fileID: 3854122474827721783}
     - target: {fileID: 3914493581021347815, guid: 77f02947ab055c443a5031b68c50615c, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -3313,7 +3353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3914493581021347815, guid: 77f02947ab055c443a5031b68c50615c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
-      value: 17
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3914493581021347815, guid: 77f02947ab055c443a5031b68c50615c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

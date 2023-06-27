@@ -14,7 +14,7 @@ public class ExitLevel : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         achievetment = FindObjectOfType<AchievetmentSession>();
         Debug.Log(currentScene);
-        Debug.Log(achievetment.stars);
+
     }
 
     void Update()
@@ -24,15 +24,15 @@ public class ExitLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
-        if (currentScene == 13 && achievetment.stars < 2)
-        {
-            achievetment.IncreaseStar();
-        }
-        if (currentScene == 16 && achievetment.stars < 2)
-        {
-            achievetment.IncreaseStar();
-        }
+        // int currentScene = SceneManager.GetActiveScene().buildIndex;
+        // if (currentScene == 13 && achievetment.stars < 2)
+        // {
+        //     achievetment.IncreaseStar();
+        // }
+        // if (currentScene == 16 && achievetment.stars < 2)
+        // {
+        //     achievetment.IncreaseStar();
+        // }
         LoadNextScene();
         gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
     }

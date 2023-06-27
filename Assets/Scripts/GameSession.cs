@@ -7,6 +7,7 @@ public class GameSession : MonoBehaviour
     public int target = 2;
     [SerializeField] GameObject exit;
 
+
     void Start()
     {
 
@@ -25,6 +26,7 @@ public class GameSession : MonoBehaviour
             exit.SetActive(true);
             DestroyNonTarget();
             DestroyCanvas();
+
             // target = 4;
         }
     }

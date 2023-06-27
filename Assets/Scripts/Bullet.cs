@@ -20,6 +20,7 @@ public class Bullet : MonoBehaviour
     Misi3 misi3;
     AudioPlayer audioPlayer;
 
+
     private void Awake()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
@@ -33,6 +34,8 @@ public class Bullet : MonoBehaviour
         game = FindObjectOfType<GameSession>();
         audioPlayer = FindAnyObjectByType<AudioPlayer>();
         misi3 = FindObjectOfType<Misi3>();
+
+
     }
 
 
@@ -57,14 +60,21 @@ public class Bullet : MonoBehaviour
         if (other.tag == "Not Target")
         {
             ShakeCamera();
-            if (currentScene <= 13)
+            if (currentScene <= 6)
             {
                 SceneManager.LoadScene(4);
             }
-            else if (currentScene > 13 && currentScene <= 16)
+            else if (currentScene > 6 && currentScene <= 12)
             {
-                SceneManager.LoadScene(14);
-
+                SceneManager.LoadScene(7);
+            }
+            else if (currentScene > 12 && currentScene <= 14)
+            {
+                SceneManager.LoadScene(13);
+            }
+            else
+            {
+                SceneManager.LoadScene(currentScene);
             }
         }
         if (other.tag == "Misi3")

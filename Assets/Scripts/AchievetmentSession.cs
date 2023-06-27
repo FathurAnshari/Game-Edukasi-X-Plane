@@ -147,12 +147,13 @@ public class AchievetmentSession : MonoBehaviour
 
     }
 
+
     public IEnumerator LoadLevel()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            PlayerPrefs.DeleteKey("levelAt");
+            // PlayerPrefs.DeleteKey("levelAt");
             misi2.interactable = true;
             misi3.interactable = true;
             nextSceneIndex = 0;

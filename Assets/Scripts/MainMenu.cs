@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     GameManager gameManager;
+
     [SerializeField] GameObject pengaturan;
     [SerializeField] GameObject profilePengembang;
     [SerializeField] GameObject materi;
@@ -40,6 +41,11 @@ public class MainMenu : MonoBehaviour
     public void closeProfile()
     {
         profilePengembang.SetActive(false);
+    }
+    public void reset()
+    {
+        PlayerPrefs.DeleteKey("levelAt");
+        Debug.Log("pressed");
     }
 
 

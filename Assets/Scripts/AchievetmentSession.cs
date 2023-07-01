@@ -11,6 +11,7 @@ public class AchievetmentSession : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI starsText;
     [SerializeField] GameObject starCanvas;
+    [SerializeField] GameObject keyPad;
     [SerializeField] Animator transitionAnim;
     [SerializeField] Button misi2;
     [SerializeField] Button misi3;
@@ -39,6 +40,7 @@ public class AchievetmentSession : MonoBehaviour
         if (currentScene == 0)
         {
             starCanvas.gameObject.SetActive(false);
+            keyPad.gameObject.SetActive(false);
         }
 
 
@@ -55,10 +57,12 @@ public class AchievetmentSession : MonoBehaviour
                 break;
             case 3:
                 starCanvas.gameObject.SetActive(false);
+                keyPad.gameObject.SetActive(false);
                 progressBar.value = 0;
                 break;
             case 4:
                 starCanvas.gameObject.SetActive(true);
+                keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
                 break;
             case 5:
@@ -69,6 +73,7 @@ public class AchievetmentSession : MonoBehaviour
                 break;
             case 7:
                 starCanvas.gameObject.SetActive(true);
+                keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
                 progressBar.maxValue = 6;
                 break;
@@ -89,6 +94,7 @@ public class AchievetmentSession : MonoBehaviour
                 break;
             case 13:
                 starCanvas.gameObject.SetActive(true);
+                keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
                 progressBar.maxValue = 2;
                 break;
@@ -97,6 +103,7 @@ public class AchievetmentSession : MonoBehaviour
                 break;
             case 15:
                 starCanvas.gameObject.SetActive(true);
+                keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
                 progressBar.maxValue = 1;
                 break;

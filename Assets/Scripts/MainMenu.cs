@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject pengaturan;
     [SerializeField] GameObject profilePengembang;
     [SerializeField] GameObject materi;
+    [SerializeField] GameObject resetButton;
 
 
 
@@ -29,10 +30,13 @@ public class MainMenu : MonoBehaviour
     public void Materi()
     {
         materi.SetActive(true);
+        resetButton.SetActive(false);
     }
     public void closeMateri()
     {
         materi.SetActive(false);
+        resetButton.SetActive(true);
+
     }
     public void profile()
     {

@@ -53,6 +53,7 @@ public class AchievetmentSession : MonoBehaviour
         {
             case 0:
                 starCanvas.gameObject.SetActive(false);
+                keyPad.gameObject.SetActive(false);
                 progressBar.value = 0;
                 break;
             case 3:

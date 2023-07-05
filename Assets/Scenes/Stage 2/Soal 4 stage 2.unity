@@ -4779,7 +4779,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8047063037622405008, guid: 7d69a56476e998740b02bad7f7ecb235, type: 3}
       propertyPath: paddingTop
-      value: 4
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 8047063037622405021, guid: 7d69a56476e998740b02bad7f7ecb235, type: 3}
       propertyPath: m_Name

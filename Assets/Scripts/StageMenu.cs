@@ -9,7 +9,6 @@ public class StageMenu : MonoBehaviour
 {
     [SerializeField] Button misi2;
     [SerializeField] Button misi3;
-    [SerializeField] Button misi4;
 
 
     private void Start()
@@ -29,7 +28,6 @@ public class StageMenu : MonoBehaviour
         {
             misi2.interactable = true;
             misi3.interactable = true;
-            misi4.interactable = true;
         }
     }
     // private void Update()

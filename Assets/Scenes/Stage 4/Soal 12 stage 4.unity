@@ -496,8 +496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -200}
+  m_AnchoredPosition: {x: 0, y: -21}
+  m_SizeDelta: {x: -200, y: -573.0144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257543174
 MonoBehaviour:
@@ -1333,7 +1333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 74, y: 97}
+  m_AnchoredPosition: {x: 74, y: -24}
   m_SizeDelta: {x: 650, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745693505
@@ -1356,11 +1356,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- -162,55 kJ
-
-    - +162,55 kJ
+  m_text: '- +162,55 kJ
 
     - -294,45 kJ
+
+    - -162,55 kJ
 
     - +294,45 kJ
 
@@ -2175,7 +2175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6164459283950579797, guid: 45e7a75757d5cfd46aeafd848f98c07b, type: 3}
       propertyPath: m_TagString
-      value: Not Target
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 6164459283950579798, guid: 45e7a75757d5cfd46aeafd848f98c07b, type: 3}
       propertyPath: m_RootOrder
@@ -2311,6 +2311,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1551451621, guid: eb946e1e3c0c40e4cb527038027291df, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2277970606772617772, guid: eb946e1e3c0c40e4cb527038027291df, type: 3}
       propertyPath: m_Name
       value: AchievementSession
@@ -3017,7 +3021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51, y: 378}
+  m_AnchoredPosition: {x: -51, y: 166}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200209800
@@ -3043,27 +3047,11 @@ MonoBehaviour:
   m_text: "Bantuan : Bunyi Hukum Hess menerangkan bahwa perubahan entalpi tidak bergantung
     pada jalannya reaksi atau tahapan reaksi dan hanya bergantung pada keadaan awal
     dan akhir reaksi.\r\nMisalnya pada suatu reaksi yang mengubah pereaksi A menjadi
-    produk C dapat terjadi secara langsung dengan perubahan entalpi \u0394H<sub>1</sub>.
-    Selain itu, reaksi A\u2192C dapat juga berlangsung dalam 2 tahap yaitu A\u2192B
-    kemudian B \u2192 C. Diketahui perubahan entalpi untuk reaksi A\u2192B adalah
-    \u0394H<sub>2</sub> dan perubahan entalpi untuk reaksi B\u2192C adalah \u0394H<sub>3</sub>.
-    Menurut percobaan yang dilakukan Hess diperoleh hubungan bahwa \u0394H<sub>1</sub>
-    = \u0394H<sub>2</sub> + \u0394H<sub>3</sub>.\r\nContoh :\r\nC(graphite) + \xBD
-    O<sub>2</sub><sub>(g)</sub> \u2192 CO<sub>(g)</sub>              \u0394H<sup>0</sup><sub>rxn</sub> 
-    = ?\r\nPerubahan entalpi untuk reaksi ini tidak dapat diukur secara langsung,
-    tetapi dapat diukur dengan menggunakan hukum hess. CO tidak hanya dibentuk dari
-    reaksi C dengan \xBD O<sub>2</sub>, tetapi dapat juga dibentuk dari reaksi berikut.\r\nC(graphite)
-    + O<sub>2</sub><sub>(g)</sub>\u2192 CO<sub>2</sub><sub>(g)</sub>             
-    \u0394H<sup>0</sup><sub>rxn</sub>  = -393,5 kJ/mol\r\nCO<sub>(g)</sub> + \xBD
-    O<sub>2</sub><sub>(g)</sub> \u2192 CO<sub>2</sub><sub>(g)</sub>                 
-    \u0394H<sup>0</sup><sub>rxn</sub>  = -283,0 kJ/mol\r\nDari reaksi yang ingin
-    diketahui perubahan entalpinya, CO ada di sebelah kanan maka harus membalikkan
-    persamaan (2), oleh karena itu kalor akan diserap bukan dilepaskan, jadi tandanya
-    \u0394H<sup>0</sup> nya harus berubah. Kemudian hapus zat yang sama di setiap
-    sisi, maka akan memberikan persamaan untuk reaksi yang kita inginkan. \r\nPerubahan
-    entalpinya menjadi:\r\n\r\nPersamaan ini menunjukkan pembentukan satu mol CO<sub>(g)</sub>
-    dalam keadaan standarnya dari elemen dalam keadaan standarnya. Dengan cara ini,
-    kita menentukan bahwa \u0394H pembentukan CO<sub>(g)</sub> adalah -110,5 kJ/mol.\r\n"
+    produk C dapat terjadi secara langsung dengan perubahan entalpi \u0394H1. Selain
+    itu, reaksi A\u2192C dapat juga berlangsung dalam 2 tahap yaitu A\u2192B kemudian
+    B \u2192 C. Diketahui perubahan entalpi untuk reaksi A\u2192B adalah \u0394H2
+    dan perubahan entalpi untuk reaksi B\u2192C adalah \u0394H3. Menurut percobaan
+    yang dilakukan Hess diperoleh hubungan bahwa \u0394H1 = \u0394H2 + \u0394H3.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3090,10 +3078,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.55
-  m_fontSizeBase: 32.55
+  m_fontSize: 41.25
+  m_fontSizeBase: 41.6
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -3126,7 +3114,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -676.9264, y: 50.544373, z: -782.81445, w: -780.44604}
+  m_margin: {x: -676.9264, y: 50.544373, z: -782.81445, w: -379.10144}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3243,7 +3231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -798, y: 392}
+  m_AnchoredPosition: {x: -798, y: 199}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275690257
@@ -4884,7 +4872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6164459283950579797, guid: 45e7a75757d5cfd46aeafd848f98c07b, type: 3}
       propertyPath: m_TagString
-      value: Target
+      value: Not Target
       objectReference: {fileID: 0}
     - target: {fileID: 6164459283950579798, guid: 45e7a75757d5cfd46aeafd848f98c07b, type: 3}
       propertyPath: m_RootOrder

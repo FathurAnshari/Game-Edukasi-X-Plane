@@ -31,12 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (gameSession.target == 0 && SceneManager.GetActiveScene().buildIndex == 16)
-        {
-            waypoints = GetComponent<Waypoints>();
-            waypoints.enabled = true;
-            gameObject.GetComponent<PlayerMovement>().enabled = false;
-        }
+
         Move();
     }
     void initBounds()

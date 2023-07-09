@@ -340,6 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 574333682}
   soalButton: {fileID: 719813811}
+  optionButton: {fileID: 0}
 --- !u!1 &279000496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1105,8 @@ MonoBehaviour:
   optionsMenu: {fileID: 1619031835}
   pauseButton: {fileID: 218625925}
   soalButton: {fileID: 719813811}
+  bantuanPanel: {fileID: 0}
+  warning: {fileID: 0}
 --- !u!1 &730337769
 GameObject:
   m_ObjectHideFlags: 0

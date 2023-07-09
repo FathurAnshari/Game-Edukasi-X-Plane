@@ -76,7 +76,7 @@ public class AchievetmentSession : MonoBehaviour
                 starCanvas.gameObject.SetActive(true);
                 keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
-                progressBar.maxValue = 6;
+                progressBar.maxValue = 11;
                 break;
             case 8:
                 progressBar.value = 2;
@@ -94,15 +94,21 @@ public class AchievetmentSession : MonoBehaviour
                 progressBar.value = 6;
                 break;
             case 13:
-                starCanvas.gameObject.SetActive(true);
-                keyPad.gameObject.SetActive(true);
-                progressBar.value = 1;
-                progressBar.maxValue = 2;
+                progressBar.value = 7;
                 break;
             case 14:
-                progressBar.value = 2;
+                progressBar.value = 8;
                 break;
             case 15:
+                progressBar.value = 9;
+                break;
+            case 16:
+                progressBar.value = 10;
+                break;
+            case 17:
+                progressBar.value = 11;
+                break;
+            case 18:
                 starCanvas.gameObject.SetActive(true);
                 keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
@@ -177,7 +183,7 @@ public class AchievetmentSession : MonoBehaviour
                 nextSceneIndex = 3;
             }
 
-            if (nextSceneIndex == 13)
+            if (nextSceneIndex == 18)
             {
                 PlayerPrefs.SetInt("levelAt", 4);
                 misi2.interactable = true;
@@ -185,14 +191,7 @@ public class AchievetmentSession : MonoBehaviour
                 misi4.interactable = false;
                 nextSceneIndex = 3;
             }
-            if (nextSceneIndex == 15)
-            {
-                PlayerPrefs.SetInt("levelAt", 5);
-                misi2.interactable = true;
-                misi3.interactable = true;
-                misi4.interactable = true;
-                nextSceneIndex = 3;
-            }
+
 
         }
         transitionAnim.SetTrigger("End");

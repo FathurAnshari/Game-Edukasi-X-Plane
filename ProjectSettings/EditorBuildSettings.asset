@@ -28,30 +28,39 @@ EditorBuildSettings:
     guid: 06ca647f492c05f439ada13a5e814fa1
   - enabled: 1
     path: Assets/Scenes/Stage 2/Soal 4 stage 2.unity
-    guid: 656c440fa36051c4db75570b650d7095
+    guid: f09ecf022f54ede44b02223b2a697183
   - enabled: 1
     path: Assets/Scenes/Stage 2/Soal 5 stage 2.unity
-    guid: 767f479ecc8deb445b07ebe87969b07d
+    guid: d0a73e9293d175d49ac583edf17923fc
   - enabled: 1
     path: Assets/Scenes/Stage 2/Soal 6 stage 2.unity
-    guid: dcc77ac12a7afbe4fb70161c20f9c87f
+    guid: 469e9930f817eb84288939f4c4821ab4
   - enabled: 1
     path: Assets/Scenes/Stage 2/Soal 7 stage 2.unity
-    guid: d73584cb558b1e84bb4480f92c22c5b5
+    guid: 656c440fa36051c4db75570b650d7095
   - enabled: 1
     path: Assets/Scenes/Stage 2/Soal 8 stage 2.unity
-    guid: 5fbdff4338a81af4dafbdfd9ef973172
+    guid: 767f479ecc8deb445b07ebe87969b07d
   - enabled: 1
     path: Assets/Scenes/Stage 2/Soal 9 stage 2.unity
+    guid: dcc77ac12a7afbe4fb70161c20f9c87f
+  - enabled: 1
+    path: Assets/Scenes/Stage 2/Soal 10 stage 2.unity
+    guid: d73584cb558b1e84bb4480f92c22c5b5
+  - enabled: 1
+    path: Assets/Scenes/Stage 2/Soal 11 stage 2.unity
+    guid: f8b47e1cc58490449aba6b10efde63d1
+  - enabled: 1
+    path: Assets/Scenes/Stage 2/Soal 12 stage 2.unity
     guid: d6ffc7bc7251f2f40a087a405d29a9e7
   - enabled: 1
-    path: Assets/Scenes/Stage 3/Soal 10 stage 3.unity
-    guid: af56f265c1ff71a4893b7170b2fd485d
+    path: Assets/Scenes/Stage 2/Soal 13 stage 2.unity
+    guid: 5fbdff4338a81af4dafbdfd9ef973172
   - enabled: 1
-    path: Assets/Scenes/Stage 3/Soal 11 stage 3.unity
-    guid: 1b9e25904a3f5bc48beb2b812632b325
+    path: Assets/Scenes/Stage 2/Soal 14 stage 2.unity
+    guid: 6347936c163b33440847918e7a706f4b
   - enabled: 1
-    path: Assets/Scenes/Stage 4/Soal 12 stage 4.unity
-    guid: 3bd8fc951862fa64e8c7c04298d730bd
+    path: Assets/Scenes/Stage 3/Soal 15 stage 3.unity
+    guid: 436f910214a48dc42a3f4af83f6125a3
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 36f06d432a08aa14390c88505d23f3eb, type: 2}

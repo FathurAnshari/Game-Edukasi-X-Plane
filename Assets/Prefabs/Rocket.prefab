@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8047063037622405009}
   - component: {fileID: 8047063037622405008}
   - component: {fileID: 8047063037622405011}
+  - component: {fileID: -7480543266622195313}
   m_Layer: 6
   m_Name: Rocket
   m_TagString: Untagged
@@ -112,7 +113,59 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5cb44dde-2005-4d07-a403-6bb4456f1f03
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f65fd012-9f08-41d5-9dbd-8909c459341d
+    m_ActionName: Player/Look[/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3114d020-fff2-40d8-a504-77fa048cb308
+    m_ActionName: Player/Fire[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: df9222b6-e7ed-4802-8f23-50f6ef4a5ffa
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 96801b93-74ab-40a1-b915-f342a7ba07ec
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5f1e2414-7571-4cc0-9972-dd29b2f82170
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74b71272-e665-45e0-8c74-0248b63c4f12
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fa300d9f-b833-4994-b5df-ae3f4f67d949
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: de641233-447d-41f0-b29f-6c190157eb1c
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: df2c74a8-7723-48a4-941b-1bbe05eb65ea
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d71f1d42-3d76-40cd-ac26-977a99f30ad8
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ba195054-0097-473b-950f-39c34abe2f87
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e26ae224-1169-4646-814c-f68dc7731002
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -135,6 +188,7 @@ MonoBehaviour:
   paddingRight: 8
   paddingTop: 2
   paddingBottom: 0.7
+  zRotation: 0
   bullet: {fileID: 3235405942177432931, guid: 0024a3e31826a6249bb01fa42bc3084e, type: 3}
   rocketLauncher: {fileID: 8047063038331540767}
 --- !u!50 &8047063037622405011
@@ -158,6 +212,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7480543266622195313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047063037622405021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0cb0505ad890a4498df56f0b4b32b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 250
+  rb: {fileID: 8047063037622405011}
+  joystick: {fileID: 3881087803549984439, guid: ec536a7718376554185e4a856d5ae230, type: 3}
 --- !u!1 &8047063038331540764
 GameObject:
   m_ObjectHideFlags: 0

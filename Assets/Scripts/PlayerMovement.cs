@@ -11,11 +11,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float paddingRight;
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
+    [SerializeField] float zRotation;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform rocketLauncher;
     AudioPlayer audioPlayer;
     Waypoints waypoints;
     GameSession gameSession;
+
 
 
     Vector2 moveInput;
@@ -27,12 +29,14 @@ public class PlayerMovement : MonoBehaviour
         gameSession = FindObjectOfType<GameSession>();
         initBounds();
         audioPlayer = FindAnyObjectByType<AudioPlayer>();
+
     }
 
     void Update()
     {
 
         Move();
+        gameObject.transform.eulerAngles = new Vector3(0, 0, -90);
     }
     void initBounds()
     {

@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
         game = FindObjectOfType<GameSession>();
         audioPlayer = FindAnyObjectByType<AudioPlayer>();
         misi3 = FindObjectOfType<Misi3>();
-
+        gameObject.transform.eulerAngles = new Vector3(0, 0, -90);
 
     }
 

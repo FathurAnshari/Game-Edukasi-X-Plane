@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         audioPlayer.PlayShootingClip();
     }
 
-    void Move()
+    public void Move()
     {
         Vector2 delta = moveInput * moveSpeed * Time.deltaTime;
         Vector2 newPos = new Vector2();

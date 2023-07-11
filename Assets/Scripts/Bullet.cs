@@ -62,15 +62,30 @@ public class Bullet : MonoBehaviour
             ShakeCamera();
             if (currentScene <= 6)
             {
-                SceneManager.LoadScene(4);
+                if (currentScene == 4)
+                {
+                    SceneManager.LoadScene(currentScene);
+                }
+                else
+                {
+
+                    SceneManager.LoadScene(currentScene - 1);
+                }
             }
             else if (currentScene > 6 && currentScene <= 17)
             {
-                SceneManager.LoadScene(7);
+                if (currentScene == 7)
+                {
+                    SceneManager.LoadScene(currentScene);
+                }
+                else
+                {
+                    SceneManager.LoadScene(currentScene - 1);
+                }
             }
             else if (currentScene == 18)
             {
-                SceneManager.LoadScene(18);
+                SceneManager.LoadScene(currentScene);
             }
             else
             {

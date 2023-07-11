@@ -11358,7 +11358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1954923160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12410,9 +12410,10 @@ MonoBehaviour:
 
     Lingkungan adalah segala sesuatu
     selain sistem yang berada di sekitar sistem. Dalam percobaan entalpi penetralan
-    50 mL larutan HCl ditambahkan dengan 50 mL larutan NaOH, sistem berupa H3O+ dan
-    OH- yang beraksi sedangkan lingkungan adalah segala sesuatu di sekitar sistem,
-    yaitu dinding kalorimeter, termometer, air, Na+ dan Cl-.
+    50 mL larutan HCl ditambahkan dengan 50 mL larutan NaOH, sistem berupa H<sup>+</sup>
+    dan OH<sup>-</sup> yang beraksi membentuk H<sub>2</sub>O sedangkan lingkungan
+    adalah segala sesuatu di sekitar sistem, yaitu dinding kalorimeter, termometer,
+    air, Na<sup>+</sup> dan Cl<sup>-</sup>.
 
 '
   m_isRightToLeft: 0

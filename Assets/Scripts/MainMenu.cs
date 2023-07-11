@@ -30,12 +30,12 @@ public class MainMenu : MonoBehaviour
     public void Materi()
     {
         materi.SetActive(true);
-        resetButton.SetActive(false);
+
     }
     public void closeMateri()
     {
         materi.SetActive(false);
-        resetButton.SetActive(true);
+
 
     }
     public void profile()

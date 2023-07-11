@@ -325,7 +325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Video  2
+  m_text: Video  1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c4b71545b4c1e334f9daae84305ed99c, type: 2}
   m_sharedMaterial: {fileID: 4101421363955948326, guid: c4b71545b4c1e334f9daae84305ed99c, type: 2}
@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -602, y: -115}
+  m_AnchoredPosition: {x: -310, y: -115}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213272646
@@ -668,7 +668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -302, y: -115}
+  m_AnchoredPosition: {x: -602, y: -115}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215887821
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Video 1
+  m_text: Video 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c4b71545b4c1e334f9daae84305ed99c, type: 2}
   m_sharedMaterial: {fileID: 4101421363955948326, guid: c4b71545b4c1e334f9daae84305ed99c, type: 2}
@@ -2323,9 +2323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'stages
-
-'
+  m_text: videos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c4b71545b4c1e334f9daae84305ed99c, type: 2}
   m_sharedMaterial: {fileID: 4101421363955948326, guid: c4b71545b4c1e334f9daae84305ed99c, type: 2}

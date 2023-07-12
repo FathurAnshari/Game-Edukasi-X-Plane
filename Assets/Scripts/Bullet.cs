@@ -86,7 +86,6 @@ public class Bullet : MonoBehaviour
         }
         if (other.tag == "Not Target")
         {
-            bantuanButton.interactable = true;
             ShakeCamera();
             if (currentScene <= 18)
             {
@@ -111,22 +110,22 @@ public class Bullet : MonoBehaviour
                         SceneManager.LoadScene(currentScene - 1);
                         break;
                     case 10:
-
+                        bantuanButton.interactable = true;
                         break;
                     case 11:
-
+                        bantuanButton.interactable = true;
                         break;
                     case 12:
                         SceneManager.LoadScene(currentScene - 1);
                         break;
                     case 13:
-
+                        bantuanButton.interactable = true;
                         break;
                     case 14:
-
+                        bantuanButton.interactable = true;
                         break;
                     case 15:
-
+                        bantuanButton.interactable = true;
                         break;
                     case 16:
                         SceneManager.LoadScene(currentScene - 1);
@@ -135,7 +134,7 @@ public class Bullet : MonoBehaviour
                         SceneManager.LoadScene(currentScene - 1);
                         break;
                     case 18:
-
+                        bantuanButton.interactable = true;
                         break;
                 }
 

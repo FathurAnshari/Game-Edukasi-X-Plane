@@ -18,6 +18,7 @@ public class AchievetmentSession : MonoBehaviour
     [SerializeField] Button misi4;
     [SerializeField] Slider progressBar;
     [SerializeField] float progressBarValue;
+    bool udahTamat = false;
 
     void Awake()
     {
@@ -113,6 +114,7 @@ public class AchievetmentSession : MonoBehaviour
                 keyPad.gameObject.SetActive(true);
                 progressBar.value = 1;
                 progressBar.maxValue = 1;
+
                 break;
         }
 
@@ -168,27 +170,37 @@ public class AchievetmentSession : MonoBehaviour
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
             // PlayerPrefs.DeleteKey("levelAt");
+            PlayerPrefs.SetInt("levelAt", 4);
             misi2.interactable = true;
             misi3.interactable = true;
+            udahTamat = true;
             nextSceneIndex = 0;
         }
         else
         {
-            if (nextSceneIndex == 7)
+            if (nextSceneIndex == 7 && !udahTamat)
             {
                 PlayerPrefs.SetInt("levelAt", 3);
                 misi2.interactable = true;
                 misi3.interactable = false;
-                misi4.interactable = false;
+                nextSceneIndex = 3;
+            }
+            if (nextSceneIndex == 7 && udahTamat)
+            {
                 nextSceneIndex = 3;
             }
 
-            if (nextSceneIndex == 18)
+
+            if (nextSceneIndex == 18 && !udahTamat)
             {
-                PlayerPrefs.SetInt("levelAt", 4);
+
                 misi2.interactable = true;
                 misi3.interactable = true;
-                misi4.interactable = false;
+
+                nextSceneIndex = 3;
+            }
+            if (nextSceneIndex == 18 && udahTamat)
+            {
                 nextSceneIndex = 3;
             }
 

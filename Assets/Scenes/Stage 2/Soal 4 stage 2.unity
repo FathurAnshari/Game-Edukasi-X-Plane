@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 574333682}
-  soalButton: {fileID: 719813811}
+  bantuanButton: {fileID: 719813811}
   optionButton: {fileID: 1913973581}
 --- !u!1 &237096976
 GameObject:
@@ -1547,7 +1547,7 @@ MonoBehaviour:
   soalMenu: {fileID: 331277415}
   optionsMenu: {fileID: 1619031835}
   pauseButton: {fileID: 218625925}
-  soalButton: {fileID: 719813811}
+  bantuanButton: {fileID: 0}
   bantuanPanel: {fileID: 257543172}
   warning: {fileID: 0}
 --- !u!1 &730337769

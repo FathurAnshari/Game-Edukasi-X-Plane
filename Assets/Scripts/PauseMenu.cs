@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-    [SerializeField] Button soalButton;
+    [SerializeField] Button bantuanButton;
     [SerializeField] Button optionButton;
     AudioPlayer audioPlayer;
     private void Start()
@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     {
         audioPlayer.GetComponent<AudioSource>().Pause();
         pauseMenu.SetActive(true);
-        soalButton.interactable = false;
+        bantuanButton.interactable = false;
         optionButton.interactable = false;
         Time.timeScale = 0f;
 
@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
     {
         audioPlayer.GetComponent<AudioSource>().Play();
         pauseMenu.SetActive(false);
-        soalButton.interactable = true;
+        // soalButton.interactable = true;
         optionButton.interactable = true;
         Time.timeScale = 1f;
     }
@@ -38,7 +38,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         audioPlayer.GetComponent<AudioSource>().Play();
-        soalButton.interactable = false;
+        bantuanButton.interactable = false;
         Time.timeScale = 1f;
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene);

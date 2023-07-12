@@ -8,7 +8,7 @@ public class SoalMenu : MonoBehaviour
     [SerializeField] GameObject soalMenu;
     [SerializeField] GameObject optionsMenu;
     [SerializeField] Button pauseButton;
-    [SerializeField] Button soalButton;
+    [SerializeField] Button bantuanButton;
     [SerializeField] GameObject bantuanPanel;
     [SerializeField] GameObject warning;
     // private void Awake()
@@ -20,14 +20,14 @@ public class SoalMenu : MonoBehaviour
     {
         soalMenu.SetActive(true);
         pauseButton.interactable = false;
-        soalButton.interactable = false;
+        // bantuanButton.interactable = false;
         Time.timeScale = 0f;
     }
     public void closeQuestion()
     {
         soalMenu.SetActive(false);
         pauseButton.interactable = true;
-        soalButton.interactable = true;
+        // bantuanButton.interactable = false;
         Time.timeScale = 1f;
     }
     public void openOptions()
@@ -39,7 +39,7 @@ public class SoalMenu : MonoBehaviour
     {
         optionsMenu.SetActive(false);
         pauseButton.interactable = true;
-        soalButton.interactable = true;
+        // bantuanButton.interactable = false;
         soalMenu.SetActive(true);
         Time.timeScale = 1f;
     }
@@ -48,14 +48,14 @@ public class SoalMenu : MonoBehaviour
         bantuanPanel.SetActive(true);
         soalMenu.SetActive(false);
         pauseButton.interactable = false;
-        soalButton.interactable = false;
+        // bantuanButton.interactable = false;
     }
     public void closeBantuan()
     {
         bantuanPanel.SetActive(false);
         soalMenu.SetActive(true);
         pauseButton.interactable = true;
-        soalButton.interactable = true;
+        // bantuanButton.interactable = true;
     }
     public void closeWarning()
     {

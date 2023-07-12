@@ -11,6 +11,7 @@ TagManager:
   - Star
   - Barrier
   - Misi3
+  - Bantuan
   layers:
   - Default
   - TransparentFX

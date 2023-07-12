@@ -140,3 +140,4 @@ MonoBehaviour:
   bulletLifetime: 1.5
   hitEffect: {fileID: 2037144352038436826, guid: 43a6272c3087f354087f7fa81df2d1b3, type: 3}
   applyCameraShake: 1
+  bantuanButton: {fileID: 7873140563344155637, guid: c32bc63753a44d840a22886ab8834120, type: 3}

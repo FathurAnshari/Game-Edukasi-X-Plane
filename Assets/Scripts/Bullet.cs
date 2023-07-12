@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Bullet : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] float bulletLifetime = 5f;
     [SerializeField] ParticleSystem hitEffect;
     [SerializeField] bool applyCameraShake;
+    Button bantuanButton;
 
     CameraShake cameraShake;
 
@@ -17,7 +19,7 @@ public class Bullet : MonoBehaviour
     PlayerMovement player;
     float xSpeed;
     GameSession game;
-    Misi3 misi3;
+    // Misi3 misi3;
     AudioPlayer audioPlayer;
 
 
@@ -33,8 +35,33 @@ public class Bullet : MonoBehaviour
         xSpeed = player.transform.localScale.x * bulletSpeed;
         game = FindObjectOfType<GameSession>();
         audioPlayer = FindAnyObjectByType<AudioPlayer>();
-        misi3 = FindObjectOfType<Misi3>();
+        // misi3 = FindObjectOfType<Misi3>();
         gameObject.transform.eulerAngles = new Vector3(0, 0, -90);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        switch (currentScene)
+        {
+            case 10:
+                bantuanButton = GameObject.FindGameObjectWithTag("Bantuan").GetComponent<Button>();
+                break;
+            case 11:
+                bantuanButton = GameObject.FindGameObjectWithTag("Bantuan").GetComponent<Button>();
+                break;
+            case 13:
+                bantuanButton = GameObject.FindGameObjectWithTag("Bantuan").GetComponent<Button>();
+                break;
+
+            case 14:
+                bantuanButton = GameObject.FindGameObjectWithTag("Bantuan").GetComponent<Button>();
+                break;
+            case 15:
+                bantuanButton = GameObject.FindGameObjectWithTag("Bantuan").GetComponent<Button>();
+                break;
+            case 18:
+                bantuanButton = GameObject.FindGameObjectWithTag("Bantuan").GetComponent<Button>();
+                break;
+        }
+
+
 
     }
 
@@ -59,44 +86,94 @@ public class Bullet : MonoBehaviour
         }
         if (other.tag == "Not Target")
         {
+            bantuanButton.interactable = true;
             ShakeCamera();
-            if (currentScene <= 6)
+            if (currentScene <= 18)
             {
-                if (currentScene == 4)
+                switch (currentScene)
                 {
-                    SceneManager.LoadScene(currentScene);
-                }
-                else
-                {
+                    case 4:
+                        SceneManager.LoadScene(currentScene);
+                        break;
+                    case 5:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 6:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 7:
+                        SceneManager.LoadScene(currentScene);
+                        break;
+                    case 8:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 9:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 10:
 
-                    SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 11:
+
+                        break;
+                    case 12:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 13:
+
+                        break;
+                    case 14:
+
+                        break;
+                    case 15:
+
+                        break;
+                    case 16:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 17:
+                        SceneManager.LoadScene(currentScene - 1);
+                        break;
+                    case 18:
+
+                        break;
                 }
+
+                // if (currentScene == 4)
+                // {
+                //     SceneManager.LoadScene(currentScene);
+                // }
+                // else
+                // {
+
+                //     SceneManager.LoadScene(currentScene - 1);
+                // }
             }
-            else if (currentScene > 6 && currentScene <= 17)
-            {
-                if (currentScene == 7)
-                {
-                    SceneManager.LoadScene(currentScene);
-                }
-                else
-                {
-                    SceneManager.LoadScene(currentScene - 1);
-                }
-            }
-            else if (currentScene == 18)
-            {
-                SceneManager.LoadScene(currentScene);
-            }
-            else
-            {
-                SceneManager.LoadScene(currentScene);
-            }
+            // else if (currentScene > 6 && currentScene <= 17)
+            // {
+            //     if (currentScene == 7)
+            //     {
+            //         SceneManager.LoadScene(currentScene);
+            //     }
+            //     else
+            //     {
+            //         SceneManager.LoadScene(currentScene - 1);
+            //     }
+            // }
+            // else if (currentScene == 18)
+            // {
+            //     SceneManager.LoadScene(currentScene);
+            // }
+            // else
+            // {
+            //     SceneManager.LoadScene(currentScene);
+            // }
         }
-        if (other.tag == "Misi3")
-        {
-            Destroy(other.gameObject);
-            misi3.reduceTarget();
-        }
+        // if (other.tag == "Misi3")
+        // {
+        //     Destroy(other.gameObject);
+        //     misi3.reduceTarget();
+        // }
         // else
         // {
 

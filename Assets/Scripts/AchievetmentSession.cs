@@ -19,6 +19,7 @@ public class AchievetmentSession : MonoBehaviour
     [SerializeField] Slider progressBar;
     [SerializeField] float progressBarValue;
     bool udahTamat = false;
+    bool udahBeres = false;
 
     void Awake()
     {
@@ -178,20 +179,24 @@ public class AchievetmentSession : MonoBehaviour
         }
         else
         {
-            if (nextSceneIndex == 7 && !udahTamat)
+            if (nextSceneIndex == 7 && !udahBeres)
             {
                 PlayerPrefs.SetInt("levelAt", 3);
                 misi2.interactable = true;
                 misi3.interactable = false;
+                udahBeres = true;
                 nextSceneIndex = 3;
             }
-            if (nextSceneIndex == 7 && udahTamat)
+            else if (nextSceneIndex == 7 && udahTamat)
             {
                 nextSceneIndex = 3;
             }
-
-
-            if (nextSceneIndex == 18 && !udahTamat)
+            else if (nextSceneIndex == 7 && udahBeres)
+            {
+                PlayerPrefs.SetInt("levelAt", 4);
+                nextSceneIndex = 3;
+            }
+            else if (nextSceneIndex == 18 && !udahTamat)
             {
                 PlayerPrefs.SetInt("levelAt", 4);
                 misi2.interactable = true;
@@ -199,7 +204,8 @@ public class AchievetmentSession : MonoBehaviour
 
                 nextSceneIndex = 3;
             }
-            if (nextSceneIndex == 18 && udahTamat)
+
+            else if (nextSceneIndex == 18 && udahTamat)
             {
                 nextSceneIndex = 3;
             }

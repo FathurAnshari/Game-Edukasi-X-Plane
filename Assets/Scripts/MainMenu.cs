@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject profilePengembang;
     [SerializeField] GameObject materi;
     [SerializeField] GameObject resetButton;
+    [SerializeField] GameObject tutorial;
 
 
 
@@ -50,6 +51,16 @@ public class MainMenu : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("levelAt");
         Debug.Log("pressed");
+    }
+    public void openTutorial()
+    {
+        tutorial.SetActive(true);
+        pengaturan.SetActive(false);
+    }
+    public void closeTutorial()
+    {
+        tutorial.SetActive(false);
+        pengaturan.SetActive(true);
     }
 
 
